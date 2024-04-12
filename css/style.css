@@ -14,6 +14,7 @@ img{
 
 h1{
     font-size: 2.027rem;
+    font-weight: 500;
 }
 
 h2{
@@ -26,6 +27,7 @@ h3{
 
 p{
     font-size: 0.75rem;
+    margin: 0;
 }
 
 a{
@@ -37,14 +39,14 @@ a{
 }
 
 header div{
-    padding: 0 30px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header img{
-    width: 100px;
+    width:150px;
 }
 
 nav ul{
@@ -58,7 +60,7 @@ nav ul li{
 
 #img-set1{
     display: grid;
-    padding: 0 30px;
+
     grid-template-areas: 
     "div1 div1 div1"
     "div1 div1 div1"
@@ -85,4 +87,27 @@ nav ul li{
 
 #img-set1 img:nth-child(4){
     grid-area: div4;
+}
+
+#sweetheart{
+    padding: 0 20px;
+}
+
+#limited{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.space p{
+    margin: 12px 0;
+}
+
+#sweetheart a:link, #sweetheart a:visited{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: .3em .3em;
+    width: 50px;
+    text-transform: capitalize;
 }
