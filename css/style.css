@@ -16,6 +16,7 @@ img{
 }
 
 h1{
+    margin-top: 0;
     font-size: 2.027rem;
     font-weight: 500;
     
@@ -63,7 +64,6 @@ nav ul li{
 
 #img-set1{
     display: grid;
-
     grid-template-areas: 
     "div1 div1 div1"
     "div1 div1 div1"
@@ -113,7 +113,7 @@ nav ul li{
     font-size: 0.75rem;
     color: #fff;
     border-radius: 5px;
-    padding: .3em .75em;
+    padding: .75em 1.5em;
     font-weight: 600;
     text-transform: none;
 }
@@ -143,27 +143,26 @@ blockquote{
     margin: 25px 0;
 }
 
-#saying-text blockquote:nth-child(3){
-    margin: 70px 0;
-}
 #try-it{
     padding: 0 20px;
 }
 #try-it h2{
     text-align: center;
 }
-
+#cards-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
 .card{
-    display: inline-block;
     background-color: #f8fafc;
-    width: 200px;
     margin: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
+
 .card img{
-    width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -187,4 +186,71 @@ footer{
     text-align: center;
     background-color: #000;
     color: #fff;
+}
+
+@media (min-width: 768px){
+    #img-set1{
+        display: grid;
+        grid-template-areas: 
+        "div1 div2"
+        "div3 div4" 
+    }
+
+    #flex-p{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    #quotes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    #quotes blockquote{
+        width:33%;
+    }
+
+    #cards-grid{
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+}
+
+@media (min-width: 960px){
+    #sweetheart{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    #img-set1{
+        display: grid;
+        grid-template-areas: 
+        "div1 div2"
+        "div3 div4" 
+    }
+
+    #flex-p{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    #quotes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    #quotes blockquote{
+        width:33%;
+    }
+
+    #cards-grid{
+        grid-template-columns: repeat(4, 1fr)
+    }
+
 }
